@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <img id="cover-page" src="_images/banner.jpg" />
+        <img src="_images/avatar/r.PNG" alt="" id="profile-pic">
+        <div id="links">
+            <a href="">Link A</a>
+            <a href="">Link B</a>
+            <a href="">Link C</a>
+            <a href="">Link D</a>
+        </div>
+        <div id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quibusdam magni, similique nisi aspernatur.</div>
+        <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam illo ea atque magni, similique nisi aspernatur dicta commodi rerum quia. Iure doloribus similique, error impedit molestiae enim vitae laboriosam eum obcaecati, consequatur odit debitis vel ullam rerum laudantium accusantium numquam commodi! Eaque animi deserunt voluptatibus ipsam harum omnis. Voluptatem laudantium totam ipsum dolorem maxime cupiditate ipsam error labore nobis, quas, dolore molestias voluptas fuga eum expedita numquam natus incidunt, at ducimus magni. Itaque quis, quo saepe laudantium voluptate, eaque animi nobis nihil aut dicta reprehenderit rem cum. Atque, consequuntur commodi quo. Ab quia, suscipit qui itaque incidunt a quaerat! Hic nisi unde nihil! Minus corrupti, natus nostrum libero error fuga in. Doloribus repellendus error commodi itaque quaerat odit, ipsam. Natus repellat repudiandae voluptatum ad, vero excepturi iusto libero possimus distinctio, alias ea dicta obcaecati recusandae similique unde officia odit veritatis blanditiis ipsum sed nihil? Explicabo quibusdam, rerum distinctio, blanditiis nam labore ab nostrum ad id, ullam necessitatibus ut! Deserunt quaerat accusamus reiciendis a, eos atque repellendus, temporibus nobis modi quia nostrum molestiae voluptatem nam impedit nesciunt? Perferendis ipsum, deserunt consequatur earum veritatis ab dolore est quis cumque odio harum, at porro iure! Aperiam magni ad corporis aliquid, mollitia iure ea.</div>
+    </div>
+
+    <script>
+        var container = document.getElementById("container").style;
+        var cover = document.getElementById("cover-page").style;
+        var profile = document.getElementById("profile-pic").style;
+        var linksList = document.getElementById("links").style;
+        var links = document.getElementsByTagName("a");
+        var info = document.getElementById("info").style;
+        var content = document.getElementById("content").style;
+        
+        container.width = "90%";
+        container.margin = "auto";
+        container.border = "2px solid #334ad1";
+        container.overflow = "hidden";
+        
+        cover.width = "100%";
+        
+        profile.position = "relative";
+        profile.top = "-50px";
+        profile.left = "10%";
+        profile.float = "left";
+        
+        info.position = "absolute";
+        info.top = "100px";
+        info.right = "150px";
+        info.width = "250px"
+        info.height = "150px";
+        info.backgroundColor = "rgba(200, 200, 200, .7)";
+        info.color = "white";
+        info.fontSize = "1.5em";
+        info.padding = "10px";
+        info.boxShadow = "2px 2px 10px white";
+        info.border = "2px solid white";
+        
+        for(var i = 0; i < links.length; i++){
+            links[i].style.textDecoration = "none";
+            links[i].style.color = "#e45211";
+            links[i].style.position = "relative";
+            links[i].style.left = "15%";
+            links[i].style.display = "inline-block";
+            links[i].style.width = "50px";
+        }
+        
+        content.clear = "both";
+    </script>
+</body>
+</html>
